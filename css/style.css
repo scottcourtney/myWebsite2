@@ -85,7 +85,7 @@ h1, h2, h3, h4, h5, h6
 
 .wrapper
 {
-	padding: 130px 0px 130px;
+	padding: 140px 0px 130px;
 }
 .top-title
 {
@@ -236,7 +236,7 @@ h3.txt-tl {
 }
 .section {
     position: relative;
-    padding: 88px 0 67px 0;
+    padding: 88px 0 167px 0;
     display: block;
 }
 .cta-txt h3 {
@@ -335,10 +335,10 @@ a, a:hover
 }
 .contact-icon-container {
     position: absolute;
-    top: -38px;
+    top: -100px;
     right: 0;
     padding-right: 20px;
-    font-size: 320px;
+    font-size: 220px;
     color: #555;
     line-height: 300px;
     -ms-transform: rotate(20deg);
@@ -359,10 +359,11 @@ a, a:hover
 }
 .footer-social
 {
-	float: right;
+	text-align: center;
 }
 .footer-social a {
-    font-size: 18px;
+    font-size: 35px;
+    padding: 0px 10px;
     color: #666;
 }
 .link-dec, .link-dec:hover{
@@ -374,50 +375,210 @@ a, a:hover
         margin-bottom: 15px;
     }
 }
-@media (min-width: 20px) and (max-width: 450px){
-    .navbar-toggle:hover, .navbar-toggle{
+@media (min-width: 20px) and (max-width: 450px) {
+    .navbar-toggle:hover, .navbar-toggle {
         background-color: #fff;
         color: #000;
     }
-    .navbar-toggle{
+
+    .navbar-toggle {
         margin-top: 0px;
     }
-    .navbar-default .navbar-nav > li > a{
+
+    .navbar-default .navbar-nav > li > a {
         text-align: center;
         background-color: rgba(255, 255, 255, 0.32);
         color: #000;
     }
-    .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
+
+    .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
         background-color: rgba(255, 255, 255, 0.32);
         color: #FFD34E;
     }
-    .top-title{
+
+    .top-title {
         font-size: 15px;
     }
 
-    .title{
+    .title {
         font-size: 50px;
     }
-    .sub-title{
+
+    .sub-title {
         font-size: 24px;
     }
+
     .footer-copyright {
-    text-align: center;
+        text-align: center;
     }
-    .padding-right-zero{
+
+    .padding-right-zero {
         padding-right: 15px;
     }
-    .section-title{
+
+    .section-title {
         margin-bottom: 15px;
     }
-    .cta-txt h3{
+
+    .cta-txt h3 {
         font-size: 28px;
     }
-    body{
+
+    body {
         font-size: 14px;
     }
-    h3.txt-tl{
+
+    h3.txt-tl {
         font-size: 20px;
     }
 }
+
+    .timeline {
+        list-style: none;
+        padding: 20px 0 20px;
+        position: relative;
+    }
+    .timeline:before {
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        content: " ";
+        width: 3px;
+        background-color: #eeeeee;
+        left: 50%;
+        margin-left: -1.5px;
+    }
+    .timeline > li {
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .timeline > li:before,
+    .timeline > li:after {
+        content: " ";
+        display: table;
+    }
+    .timeline > li:after {
+        clear: both;
+    }
+    .timeline > li:before,
+    .timeline > li:after {
+        content: " ";
+        display: table;
+    }
+    .timeline > li:after {
+        clear: both;
+    }
+    .timeline > li > .timeline-panel {
+        width: 50%;
+        float: left;
+        border: 1px solid #d4d4d4;
+        border-radius: 2px;
+        padding: 20px;
+        position: relative;
+        -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    }
+    .timeline > li.timeline-inverted + li:not(.timeline-inverted),
+    .timeline > li:not(.timeline-inverted) + li.timeline-inverted {
+        margin-top: -60px;
+    }
+
+    .timeline > li:not(.timeline-inverted) {
+        padding-right:90px;
+    }
+
+    .timeline > li.timeline-inverted {
+        padding-left:90px;
+    }
+    .timeline > li > .timeline-panel:before {
+        position: absolute;
+        top: 26px;
+        right: -15px;
+        display: inline-block;
+        border-top: 15px solid transparent;
+        border-left: 15px solid #ccc;
+        border-right: 0 solid #ccc;
+        border-bottom: 15px solid transparent;
+        content: " ";
+    }
+    .timeline > li > .timeline-panel:after {
+        position: absolute;
+        top: 27px;
+        right: -14px;
+        display: inline-block;
+        border-top: 14px solid transparent;
+        border-left: 14px solid #fff;
+        border-right: 0 solid #fff;
+        border-bottom: 14px solid transparent;
+        content: " ";
+    }
+    .timeline > li > .timeline-badge {
+        color: #fff;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 1.4em;
+        text-align: center;
+        position: absolute;
+        top: 25px;
+        left: 50%;
+        margin-left: -16px;
+        background-color: #999999;
+        z-index: 100;
+        border-top-right-radius: 50%;
+        border-top-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+    }
+    .timeline > li.timeline-inverted > .timeline-panel {
+        float: right;
+    }
+    .timeline > li.timeline-inverted > .timeline-panel:before {
+        border-left-width: 0;
+        border-right-width: 15px;
+        left: -15px;
+        right: auto;
+    }
+    .timeline > li.timeline-inverted > .timeline-panel:after {
+        border-left-width: 0;
+        border-right-width: 14px;
+        left: -14px;
+        right: auto;
+    }
+    .timeline-badge.primary {
+        background-color: #2e6da4 !important;
+    }
+    .timeline-badge.success {
+        background-color: #3f903f !important;
+    }
+    .timeline-badge.warning {
+        background-color: #f0ad4e !important;
+    }
+    .timeline-badge.danger {
+        background-color: #d9534f !important;
+    }
+    .timeline-badge.info {
+        background-color: #5bc0de !important;
+    }
+    .timeline-title {
+        margin-top: 0;
+        color: inherit;
+    }
+    .timeline-subtitle {
+        font-size: small;
+        margin-top: 0;
+        color: inherit;
+    }
+    .timeline-body > p,
+    .timeline-body > ul {
+        margin-bottom: 0;
+    }
+    .timeline-body > p + p {
+        margin-top: 5px;
+    }
+    .work-experience {
+        text-align: center;
+        font-size: 50px;
+        color: #1b6d85;
+    }
 /****/

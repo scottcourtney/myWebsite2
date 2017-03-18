@@ -29,6 +29,7 @@ h1, h2, h3, h4, h5, h6
 /**media Queries**/
 .navbar-default {
     background-color: transparent;
+    overflow: auto;
 }
 .main-header
 {
@@ -66,6 +67,7 @@ h1, h2, h3, h4, h5, h6
     color: #fff;
     padding: 0px 20px;
     text-transform: uppercase;
+    z-index: -1; position:relative;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus
 {
@@ -210,8 +212,8 @@ p
 	font-size: 35px;
 }
 .icon-text {
-    margin-left: 73px;
-    padding:0px 25px 25px 0px;
+    margin-left: 50px;
+    padding:0px 10px 10px 0px;
 }
 h3.txt-tl {
     font-size: 24px;
@@ -225,10 +227,10 @@ h3.txt-tl {
 }
 .bg-image-2 {
     background: url('../img/myBanner.jpeg') no-repeat center fixed;
-    -webkit-background-size: 100% auto;
-    -moz-background-size: 100% auto;
-    -o-background-size: 100% auto;
-    background-size: 100% auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -576,7 +578,7 @@ a, a:hover
     .timeline-body > p + p {
         margin-top: 5px;
     }
-    .work-experience {
+    .section-header {
         text-align: center;
         font-size: 50px;
         color: #1b6d85;
